@@ -10,4 +10,3 @@
     bd: prod_bd
     preferred_group: yes
     state: present
-  delegate_to: localhost
