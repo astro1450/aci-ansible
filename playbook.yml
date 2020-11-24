@@ -4,9 +4,9 @@
   tasks:
   - name: Add a new EPG
     cisco.aci.aci_epg:
-      hostname: apic
+      hostname: sandboxapicdc.cisco.com
       username: admin
-      password: SomeSecretPassword
+      password: ciscopsdt
       tenant: production
       ap: intranet
       epg: web_epg
