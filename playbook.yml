@@ -1,12 +1,6 @@
-- hosts: aci
-  gather_facts: no
-
   tasks:
   - name: Add a new EPG
     cisco.aci.aci_epg:
-      hostname: apic
-      username: admin
-      password: SomeSecretPassword
       tenant: production
       ap: intranet
       epg: web_epg
