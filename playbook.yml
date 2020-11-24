@@ -1,12 +1,15 @@
-cisco.aci.aci_epg:
-    host: apic
-    username: admin
-    password: SomeSecretPassword
-    tenant: production
-    ap: intranet
-    epg: web_epg
-    description: Web Intranet EPG
-    bd: prod_bd
-    preferred_group: yes
-    state: present
-  delegate_to: localhost
+- hosts: 192.168.163.129
+  gather_facts: no
+
+  tasks:
+  - name: Add a new EPG
+    cisco.aci.aci_epg:
+      hostname: apic
+      username: admin
+      password: SomeSecretPassword
+      tenant: production
+      ap: intranet
+      epg: web_epg
+      description: Web Intranet EPG
+      bd: prod_bd
+    delegate_to: localhost
