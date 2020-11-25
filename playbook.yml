@@ -1,4 +1,8 @@
 ---
+plugin: cisco.aci.aci_epg
+host: sandboxapicdc.cisco.com
+validate_certs: no
+
 - name: Add a new EPG
   cisco.aci.aci_epg:
     host: apic
