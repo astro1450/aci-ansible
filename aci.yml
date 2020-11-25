@@ -1,0 +1,4 @@
+---
+plugin: cisco.aci.aci_epg
+host: sandboxapicdc.cisco.com
+validate_certs: no
